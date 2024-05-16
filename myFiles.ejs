@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cloud Storage Website Template</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="/plugins/testimonial/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/plugins/testimonial/css/owl.theme.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/journal/bootstrap.min.css
+    " rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row head-col">
+                <div class="col-md-3 logo-col">
+                    <img src="\images\logo.png" alt="">
+                    <a class="d-md-none small-menu" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas d-lg-none  fa-bars"></i>
+                    </a>
+                </div>
+                <div class="col-right d-none d-md-block col-md-9 pr-0">
+                    <ul>
+                        <li><i class="fa fa-phone"></i> +1 4376629558 </li>
+
+                        <li class="green-cover"><i class="fa fa-lock"></i><a href="/users/logout"> Logout </a> </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="collapseExample" class="nav-col">
+                <ul>
+
+                    <li><a href="fetchFile">My Files</a></li>
+
+                    <li class="lis"><i class="fa fa-shopping-cart"></i></li>
+                    <li class="lis"><i class="fa fa-search"></i></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ################################## Banner Starts Here ###############################-->
+
+
+    <div class="banner-container container-fluid">
+        <div class="row">
+            <div class="col-lg-6 banner-content">
+
+                <p>Most reliable and authenticate way to store and access your files </p>
+            </div>
+            <div class="col-lg-6 pr-0 banner-image">
+                <img src="/images/slider.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--################### Testimonial Starts Here #######################--->
+
+
+    <div class="container m-auto">
+        <div class="row m-auto">
+            <div class="col-md-12">
+                <div class="card m-b-30">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h5 class="card-title mb-0">My Files</h5>
+                            </div>
+                            <div class="col-4">
+                                <ul class="list-inline-group text-right mb-1 pl-0">
+                                    <li class="list-inline-item mr-0 font-12"><i
+                                            class="feather icon-more-vertical- font-20 text-primary"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-file-type">
+                            <ul class="list-unstyled">
+                                <% files.map(value=> { %>
+                                    <li class="media mb-3">
+                                        <div class="media-body">
+                                            <a href="http://127.0.0.1:3008/<%= value.file %>">
+                                                <%= value.file %>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="testimonial-container">
+            <div class="container">
+
+                <!--  ************************* Footer Start Here ************************** -->
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <h2>About Us</h2>
+                                <p>
+                                    Welcome to SmartStudyVault, where education meets innovation. We are a dedicated
+                                    team passionate
+                                    about
+                                    providing a cutting-edge e-learning file-sharing platform designed to empower
+                                    educators,
+                                    learners, and
+                                    institutions.
+                                </p>
+                                <p>At SmartStudyVault, our mission is to revolutionize the educational experience by
+                                    offering a
+                                    seamless and
+                                    secure platform for sharing knowledge. We believe in the transformative power of
+                                    education and
+                                    strive to
+                                    provide tools that enhance collaboration, engagement, and personalization....
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <h2>Useful Links</h2>
+                                <ul class="list-unstyled link-list">
+                                    <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i
+                                            class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li><a ui-sref="products" href="#/products">Latest jobs</a><i
+                                            class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li><a ui-sref="gallery" href="#/gallery">Pricing</a><i
+                                            class="fa fa-angle-right"></i>
+                                    </li>
+                                    <li><a ui-sref="contact" href="#/contact">Contact us</a><i
+                                            class="fa fa-angle-right"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-12 map-img">
+                                <h2>Contact Us</h2>
+                                <address class="md-margin-bottom-40">
+                                    BlueDart Hosting <br>
+                                    765th Boulevard, <br>
+                                    Rochester, CA <br>
+                                    Phone: +1 831 143 556 <br>
+                                    Email: <a href="mailto:info@bluedart.com" class="">info@bluedart.in</a><br>
+                                    Web: <a href="https://smarteyeapps.com/" class="">www.bluedart.in</a>
+                                </address>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </footer>
+                <div class="copy">
+                    <div class="container">
+                        <a href="https://www.smarteyeapps.com/">2019 &copy; All Rights Reserved | Designed and
+                            Developed
+                            by
+                            Smarteyeapps</a>
+
+                        <span>
+                            <a><i class="fab fa-github"></i></a>
+                            <a><i class="fab fa-google-plus-g"></i></a>
+                            <a><i class="fab fa-pinterest-p"></i></a>
+                            <a><i class="fab fa-twitter"></i></a>
+                            <a><i class="fab fa-facebook-f"></i></a>
+                        </span>
+                    </div>
+
+                </div>
+
+
+
+
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
